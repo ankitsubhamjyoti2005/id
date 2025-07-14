@@ -1,6 +1,5 @@
 # ALERTIFY: Serverless Alert System for Disaster Events
 
-`
 IoT Device (Vibration Sensor)
        |
    [API Gateway] <-- Public APIs (earthquake/weather)
@@ -14,4 +13,4 @@ IoT Device (Vibration Sensor)
   -----------------------------
        |
 [CloudFront] --> Public Dashboard
-`
+
