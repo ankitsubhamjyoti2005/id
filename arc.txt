@@ -1,0 +1,107 @@
+ALERTIFY: Serverless Alert System for Disaster Events
+
+IoT Device (Vibration Sensor)
+       |
+   [API Gateway] <-- Public APIs (earthquake/weather)
+       |
+   [AWS Lambda Function]
+       |
+  -----------------------------
+ | DynamoDB (Processed Alerts) |
+ | S3 (Historical Logs)        |
+ | SNS (Real-time Notifications) |
+  -----------------------------
+       |
+[CloudFront] --> Public Dashboard
+
+Key Technologies:
+AWS Lambda (serverless compute)
+API Gateway
+DynamoDB
+S3 (logs)
+SNS (notifications)
+CloudFront (dashboard hosting)
+
+Questions:
+How is data collected from the IoT device?
+Why serverless? Why not EC2?
+Why DynamoDB over RDS?
+How is alert reliability ensured?
+How are public APIs integrated securely?
+
+
+2. Multi-Region Web Application Deployment
+
+         [User]
+            |
+        [Route 53 DNS]
+         /         \
+ [Region A]       [Region B]
+     |                |
+[S3 + CloudFront]  [S3 + CloudFront]
+     |                |
+[Backend APIs]    [Backend APIs]
+     \                /
+   [CloudWatch Monitoring]
+
+
+ Key Technologies:
+Route 53 (DNS + health checks)
+S3 (static hosting)
+CloudFront (CDN)
+Multi-region deployment
+CloudWatch
+
+ Questions:
+Explain active-passive vs active-active.
+What happens if Region A goes down?
+How are assets replicated?
+What’s the TTL strategy for DNS failover?
+How was latency measured and optimized?
+
+
+3.Auto-Healing & Cost-Optimized Infrastructure
+   [Terraform] --> Infra Provisioning
+         |
+     [EC2 Instances]
+         |
+  -------------------------
+ | Auto Scaling Group     |
+ | CloudWatch Alarms      |
+ | SNS Alerts             |
+  -------------------------
+         |
+ [AWS Inspector - Security Scans]
+         |
+ [Lambda - Stop Idle Resources]
+
+Key Technologies:
+EC2 with Auto Scaling
+CloudWatch + Alarms + SNS
+AWS Inspector (vulnerability scans)
+Lambda (automation for cost savings)
+Terraform (infrastructure as code)
+
+Questions:
+What metrics determine an “idle” EC2?
+How did you automate shutdown of underutilized resources?
+Why Terraform over AWS CloudFormation?
+How often does AWS Inspector run?
+What cost optimizations did you measure?
+
+
+
+Cloud Engineering Concepts & Tools to Review (padh ka jana ya sab)
+
+AWS Services:
+IAM (Roles vs Policies)
+EC2, S3, Lambda, Route 53, CloudFront
+CloudWatch, Inspector, SNS, API Gateway
+DynamoDB (NoSQL)
+
+DevOps/Automation:
+Docker, CI/CD pipelines
+GitHub Actions / Jenkins
+Terraform basics
+Bash scripting
+Auto Scaling groups
