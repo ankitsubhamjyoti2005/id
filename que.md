@@ -1,9 +1,6 @@
+##  Project-Based Questions (from your resume)
 
-# 🧠 Cloud Engineer Interview Prep - 100 Questions Based on Resume
-
-## 🧱 Project-Based Questions (from your resume)
-
-### 🔔 ALERTIFY: Disaster Alert System
+###  ALERTIFY: Disaster Alert System
 1. Why did you use AWS Lambda instead of EC2?
 2. How does the IoT device send data to the cloud?
 3. How is data ingested from public APIs?
@@ -15,7 +12,7 @@
 9. What are the fail-safes if Lambda fails?
 10. How did you design the dashboard via CloudFront?
 
-### 🌐 Multi-Region Web Application Deployment
+###  Multi-Region Web Application Deployment
 11. Why multi-region? When is it necessary?
 12. How does Route 53 handle failover?
 13. What are Route 53 health checks?
@@ -27,7 +24,7 @@
 19. What monitoring tools were used?
 20. What were the biggest challenges during deployment?
 
-### ⚙️ Auto-Healing & Cost-Optimized Infra
+###  Auto-Healing & Cost-Optimized Infra
 21. How do CloudWatch alarms trigger actions?
 22. How did AWS Inspector help in security?
 23. What metrics identify underutilized EC2 instances?
@@ -39,7 +36,7 @@
 29. How was cost monitored and visualized?
 30. How would you scale this solution to 1000+ instances?
 
-## ☁️ AWS & Cloud Architecture
+##  AWS & Cloud Architecture
 31. What’s the difference between EC2 and Lambda?
 32. When would you use S3 vs EFS vs EBS?
 33. What is the Shared Responsibility Model in AWS?
@@ -61,7 +58,7 @@
 49. What is the purpose of CloudTrail?
 50. Explain how CloudWatch differs from X-Ray.
 
-## 🛠️ DevOps & Automation
+##  DevOps & Automation
 51. What is Infrastructure as Code (IaC)?
 52. How does Terraform manage state?
 53. How do you handle secrets in pipelines?
@@ -83,7 +80,7 @@
 69. How would you implement canary deployment?
 70. How do you automate AMI creation?
 
-## 🔒 Security, Monitoring & Optimization
+##  Security, Monitoring & Optimization
 71. How did you use AWS Inspector?
 72. How do you ensure data security in your projects?
 73. How do you set up alerting in CloudWatch?
@@ -95,7 +92,7 @@
 79. How would you estimate cloud cost before deployment?
 80. What is a cost anomaly detection setup?
 
-## 💬 Behavioral & Communication
+##  Behavioral & Communication
 81. Tell me about a project where things went wrong.
 82. How do you handle deadlines in cloud migration?
 83. What’s the biggest technical challenge you’ve faced?
@@ -107,7 +104,7 @@
 89. What do you do to keep your cloud knowledge current?
 90. How do you balance cost vs performance in cloud?
 
-## 🎯 Role-Specific / Advanced
+##  Role-Specific / Advanced
 91. How would you migrate an on-prem app to AWS?
 92. Explain zero-downtime deployment strategies.
 93. How would you troubleshoot a failed deployment?
